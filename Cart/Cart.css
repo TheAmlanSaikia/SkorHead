@@ -55,8 +55,6 @@ body {
     width: 68%;
     height: max-content;
     display: flex;
-
-
 }
 
 .checkout-list-container {
@@ -97,4 +95,4 @@ body {
     width: 100vw;
     height: 50vh;
     background-color: var(--footer-bg-color);
-  }
+}
