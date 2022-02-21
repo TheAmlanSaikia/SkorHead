@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Amlan Saikia" />
-    <meta name="description" content="Login" />
+    <meta name="description" content="SkorHead Sign-up" />
     <link rel="shortcut icon" href="/" image/x-icon"> <title>SkorHead</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://silkier-ui.netlify.app/Components/SILK-UI-V1.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="/Sign-up/signup.css" />
 </head>
 
 <body>
@@ -51,7 +52,14 @@
             <div class="display-container-form">
                 <main class="form-container">
                     <form id="form" class="form">
-                        <h3 class="title-text">Welcome Back</h3>
+                        <h3 class="title-text">Register Here</h3>
+                        <section class="form-control form-control-username">
+                            <label for="username" class="form-label username-label">Username</label>
+                            <input type="text" class="form-input username-input" id="username"
+                                placeholder="Enter Username" />
+                            <small class="error-msg">Error Message</small>
+                        </section>
+
                         <section class="form-control form-control-email">
                             <label for="email" class="form-label email-label">Email</label>
                             <input type="text" class="form-input email-input" id="email" placeholder="Enter email" />
@@ -63,26 +71,23 @@
                             <input type="password" class="form-input password1-input" id="password1"
                                 placeholder="Enter Password" />
                             <small class="error-msg">Error Message</small>
-                            <div class="passwordforget-box flex-row justify-between mt-1">
-                                <div class="remember-me">
-                                    <input type="checkbox" name="password-remember" id="paswordcheckbox">
-                                    <label for="password-remember" class="text-sm">Remember me!</label>
-                                </div>
-                                <a href="http://" class="text-sm link-text">Forgot password?</a>
-                            </div>
+                        </section>
+
+                        <section class="form-control form-control-password2">
+                            <label for="password2" class="form-label password2-label">Confirm Password</label>
+                            <input type="password" class="form-input password2-input" id="password2"
+                                placeholder="Confirm Password" />
+                            <small class="error-msg">Error Message</small>
                         </section>
                         <button class="btn-submit" type="submit">Submit</button>
-                        <div class="signup-box ml-auto mr-auto">
-                            <p class="text-sm mt-1">Don't have an account?<a class="text-sm link-text" href="/Sign-up/signup.html">Sign up for
-                                    Free!</a>
-                            </p>
-                        </div>
                     </form>
                 </main>
             </div>
         </main>
+        <footer class="footer footer-container">
 
-    </div>
+        </footer>
+
 </body>
 
 </html>
