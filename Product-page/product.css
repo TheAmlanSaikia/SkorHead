@@ -1,9 +1,14 @@
 @import url(/Utility.css);
 
+
 html,
 body {
   max-width: 100%;
   overflow-x: clip;
+}
+
+hr {
+  margin: 0;
 }
 
 .grid-container {
