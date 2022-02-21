@@ -1,19 +1,17 @@
-:root{
-    --footer-bg-color: #f7f7f7; 
+:root {
+    --footer-bg-color: #f7f7f7;
 }
 
-hr{
-    margin: 0;
-}
 
-.no-style{
+
+.no-style {
     margin: 0;
     padding: 0;
     border: 0;
     background-color: var(--pure-white);
-    
+
 }
 
-.pointer{
-   cursor: pointer;
+.pointer {
+    cursor: pointer;
 }
