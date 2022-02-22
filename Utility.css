@@ -1,20 +1,18 @@
 :root {
-    --footer-bg-color: #f7f7f7;
-}
-.link-text{
-    color:blue;
+  --footer-bg-color: #f7f7f7;
 }
 
+.link-text {
+  color: blue;
+}
 
 .no-style {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background-color: var(--pure-white);
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: var(--pure-white);
 }
 
 .pointer {
-    cursor: pointer;
+  cursor: pointer;
 }
-

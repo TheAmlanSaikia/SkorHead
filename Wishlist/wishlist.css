@@ -1,6 +1,5 @@
 @import url(/Utility.css);
 
-
 html,
 body {
   max-width: 100%;
@@ -44,18 +43,18 @@ hr {
   padding-right: var(--value-2);
 }
 
-.header-container{
-    grid-area: header;
+.header-container {
+  grid-area: header;
 }
 
-.main-container{
-    grid-area: main;
-    width: 100vw;
+.main-container {
+  grid-area: main;
+  width: 100vw;
 }
 
 .footer-container {
-    grid-area: footer;
-    width: 100vw;
-    height: 50vh;
-    background-color: var(--footer-bg-color);
-  }
+  grid-area: footer;
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--footer-bg-color);
+}
