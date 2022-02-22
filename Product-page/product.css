@@ -1,6 +1,5 @@
 @import url(/Utility.css);
 
-
 html,
 body {
   max-width: 100%;
@@ -54,14 +53,12 @@ hr {
 .header-info {
   margin-top: var(--value-3);
   margin-left: var(--value-2);
-
 }
 
 .aside-container {
   grid-area: aside;
   width: 18vw;
   margin-left: var(--value-2);
-
 }
 
 .filter-title-container {

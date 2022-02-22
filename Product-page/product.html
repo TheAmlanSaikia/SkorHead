@@ -1,333 +1,437 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Amlan Saikia" />
     <meta name="description" content="SkorHead Product" />
-    <link rel="shortcut icon" href="/" image/x-icon"> <title>SkorHead</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://silkier-ui.netlify.app/Components/SILK-UI-V1.css" />
+    <link rel="shortcut icon" href="/" image/x-icon">
+    <title>SkorHead</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://silkier-ui.netlify.app/Components/SILK-UI-V1.css"
+    />
     <link rel="stylesheet" href="/Product-page/product.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="grid-container">
-        <nav class="navbar sticky flex-row items-center flew-wrap">
-            <div class="hamburger"></div>
-            <h4>SkorHead</h4>
-            <ul class="navlinks-primary list-style-none flex-row">
-                <li class="navlinks">
-                    <a href="/index.html" class="link navbar-link text-lg">
-                        <h5>Home</h5>
-                    </a>
-                </li>
-                <li class="navlinks">
-                    <a href="/Product-page/product.html" class="link navbar-link text-lg">
-                        <h5>Products</h5>
-                    </a>
-                </li>
-            </ul>
-            <ul class="navlinks-secondary flex-row ml-auto list-style-none">
-                <li class="navlinks">
-                    <a href="/Login/login.html" class="link navbar-link text-lg">Login</a>
-                </li>
-                <li class="navlinks">
-                    <a href="/Wishlist/Wishlist.html" class="link navbar-link text-lg">Wishlist</a>
-                </li>
-                <li class="navlinks">
-                    <a href="/Cart/Cart.html" class="link navbar-link text-lg">Bag</a>
-                </li>
-                <li class="navlinks">
-                    <a href="/" class="link navbar-link text-lg mr-3">Logout</a>
-                </li>
-            </ul>
-        </nav>
-        <header class="header-container flex-col">
-            <h6 class="header-info">
-                SkorHead Products-<span class="text-md"> 200 Items</span>
-            </h6>
-        </header>
-        <aside class="aside-container flex-col">
-            <div class="filter-title-container flex-row items-center justify-between">
-                <button class="no-style pointer">
-                    <h6 class="filter-header">FILTER</h6>
-                </button>
-                <button class="no-style pointer">
-                    <p class="text-md filter-clear">CLEAR ALL</p>
-                </button>
+      <nav class="navbar sticky flex-row items-center flew-wrap">
+        <div class="hamburger"></div>
+        <h4>SkorHead</h4>
+        <ul class="navlinks-primary list-style-none flex-row">
+          <li class="navlinks">
+            <a href="/index.html" class="link navbar-link text-lg">
+              <h5>Home</h5>
+            </a>
+          </li>
+          <li class="navlinks">
+            <a
+              href="/Product-page/product.html"
+              class="link navbar-link text-lg"
+            >
+              <h5>Products</h5>
+            </a>
+          </li>
+        </ul>
+        <ul class="navlinks-secondary flex-row ml-auto list-style-none">
+          <li class="navlinks">
+            <a href="/Login/login.html" class="link navbar-link text-lg"
+              >Login</a
+            >
+          </li>
+          <li class="navlinks">
+            <a href="/Wishlist/Wishlist.html" class="link navbar-link text-lg"
+              >Wishlist</a
+            >
+          </li>
+          <li class="navlinks">
+            <a href="/Cart/Cart.html" class="link navbar-link text-lg">Bag</a>
+          </li>
+          <li class="navlinks">
+            <a href="/" class="link navbar-link text-lg mr-3">Logout</a>
+          </li>
+        </ul>
+      </nav>
+      <header class="header-container flex-col">
+        <h6 class="header-info">
+          SkorHead Products-<span class="text-md"> 200 Items</span>
+        </h6>
+      </header>
+      <aside class="aside-container flex-col">
+        <div
+          class="filter-title-container flex-row items-center justify-between"
+        >
+          <button class="no-style pointer">
+            <h6 class="filter-header">FILTER</h6>
+          </button>
+          <button class="no-style pointer">
+            <p class="text-md filter-clear">CLEAR ALL</p>
+          </button>
+        </div>
+
+        <ul class="list-style-none filter-list">
+          <li class="filter-category-container">
+            <div class="filter-price-container">
+              <p class="text-lg filter-name">SORT PRICE</p>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="radio"
+                  name="sort"
+                  value="HIGH_TO_LOW_PRICE"
+                />
+                Price High to low
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="radio"
+                  name="sort"
+                  value="HIGH_TO_LOW_PRICE"
+                />
+                Price High to low
+              </label>
             </div>
+          </li>
 
-            <ul class="list-style-none filter-list">
-                <li class="filter-category-container">
-                    <div class="filter-price-container">
-                        <p class="text-lg filter-name">SORT PRICE</p>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="radio" name="sort" value="HIGH_TO_LOW_PRICE" />
-                            Price High to low
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="radio" name="sort" value="HIGH_TO_LOW_PRICE" />
-                            Price High to low
-                        </label>
-                    </div>
-                </li>
-
-                <li class="filter-category-container">
-                    <div class="filter-shoetype-container">
-                        <p class="text-lg filter-name">CATEGORY</p>
-                        <label class="form-label">
-                            <input type="checkbox" name="category" class="form-checkbox-field"
-                                value="Chuck Taylor Sneakers" />
-                            Chuck Taylor Sneakers
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="BasketBall" />
-                            BasketBall
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="Running" />
-                            Running
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="SliponSneakers" />
-                            Slip-on Sneakers
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category"
-                                value="AuthenticSneakers" />
-                            Authentic Sneakers
-                        </label>
-                    </div>
-                </li>
-
-                <li class="filter-category-container">
-                    <div class="filter-shoebrand-container">
-                        <p class="text-lg filter-name">BRAND</p>
-                        <label class="form-label">
-                            <input type="checkbox" name="category" class="form-checkbox-field" value="NIKE" />
-                            NIKE
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="Adidas" />
-                            Adidas
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="VANS" />
-                            VANS
-                        </label>
-                        <label class="form-label">
-                            <input class="form-checkbox-field" type="checkbox" name="category" value="Puma" />
-                            Puma
-                        </label>
-                    </div>
-                </li>
-            </ul>
-        </aside>
-
-        <main class="main main-container">
-            <div class="products-cards-display flex-row flex-wrap p-3">
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <h5 class="card-title">Air Jordan 1 Mid SE</h5>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image dismiss-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                        <button class="cross-btn">
-                            <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
-                        </button>
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <div class="title-container">
-                                <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
-                                <button class="wishlist-btn">
-                                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
-                                </button>
-                            </div>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <h5 class="card-title">Air Jordan 1 Mid SE</h5>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="overlay-section">
-                        <h3 class="overlay-text">Out of stock</h3>
-                    </section>
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <div class="title-container">
-                                <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
-                                <button class="wishlist-btn">
-                                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
-                                </button>
-                            </div>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="overlay-section">
-                        <h3 class="overlay-text">Out of stock</h3>
-                    </section>
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <div class="title-container">
-                                <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
-                                <button class="wishlist-btn">
-                                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
-                                </button>
-                            </div>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <h5 class="card-title">Air Jordan 1 Mid SE</h5>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image dismiss-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                        <button class="cross-btn">
-                            <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
-                        </button>
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <div class="title-container">
-                                <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
-                                <button class="wishlist-btn">
-                                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
-                                </button>
-                            </div>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image dismiss-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                        <button class="cross-btn">
-                            <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
-                        </button>
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <div class="title-container">
-                                <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
-                                <button class="wishlist-btn">
-                                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
-                                </button>
-                            </div>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
-
-                <main class="vertical-cardbody card-shadow">
-                    <section class="image-container">
-                        <img class="cover-image" loading="lazy" src="/Assests/Images/Air-Jordan-1.webp"
-                            alt="Air-Jordan-1" />
-                    </section>
-                    <section class="information-container">
-                        <div class="card-text-container">
-                            <h5 class="card-title">Air Jordan 1 Mid SE</h5>
-                            <p class="card-category">Men's Shoes</p>
-                            <p class="price-container"></p>
-                            <h6 class="price">Rs 10298</h6>
-                            <p>(Inclusive of all tax)</p>
-                        </div>
-                        <button class="btn-card btn-cart">Add to Cart</button>
-                    </section>
-                </main>
+          <li class="filter-category-container">
+            <div class="filter-shoetype-container">
+              <p class="text-lg filter-name">CATEGORY</p>
+              <label class="form-label">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-checkbox-field"
+                  value="Chuck Taylor Sneakers"
+                />
+                Chuck Taylor Sneakers
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="BasketBall"
+                />
+                BasketBall
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="Running"
+                />
+                Running
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="SliponSneakers"
+                />
+                Slip-on Sneakers
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="AuthenticSneakers"
+                />
+                Authentic Sneakers
+              </label>
             </div>
-        </main>
+          </li>
 
-        <footer class="footer footer-container"></footer>
+          <li class="filter-category-container">
+            <div class="filter-shoebrand-container">
+              <p class="text-lg filter-name">BRAND</p>
+              <label class="form-label">
+                <input
+                  type="checkbox"
+                  name="category"
+                  class="form-checkbox-field"
+                  value="NIKE"
+                />
+                NIKE
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="Adidas"
+                />
+                Adidas
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="VANS"
+                />
+                VANS
+              </label>
+              <label class="form-label">
+                <input
+                  class="form-checkbox-field"
+                  type="checkbox"
+                  name="category"
+                  value="Puma"
+                />
+                Puma
+              </label>
+            </div>
+          </li>
+        </ul>
+      </aside>
+
+      <main class="main main-container">
+        <div class="products-cards-display flex-row flex-wrap p-3">
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <h5 class="card-title">Air Jordan 1 Mid SE</h5>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image dismiss-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+              <button class="cross-btn">
+                <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
+              </button>
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <div class="title-container">
+                  <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
+                  <button class="wishlist-btn">
+                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
+                  </button>
+                </div>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <h5 class="card-title">Air Jordan 1 Mid SE</h5>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="overlay-section">
+              <h3 class="overlay-text">Out of stock</h3>
+            </section>
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <div class="title-container">
+                  <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
+                  <button class="wishlist-btn">
+                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
+                  </button>
+                </div>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="overlay-section">
+              <h3 class="overlay-text">Out of stock</h3>
+            </section>
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <div class="title-container">
+                  <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
+                  <button class="wishlist-btn">
+                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
+                  </button>
+                </div>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <h5 class="card-title">Air Jordan 1 Mid SE</h5>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image dismiss-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+              <button class="cross-btn">
+                <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
+              </button>
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <div class="title-container">
+                  <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
+                  <button class="wishlist-btn">
+                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
+                  </button>
+                </div>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image dismiss-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+              <button class="cross-btn">
+                <i class="fa-solid fa-xmark cross-mark fa-xl"></i>
+              </button>
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <div class="title-container">
+                  <h5 class="card-title title-icon">Air Jordan 1 Mid</h5>
+                  <button class="wishlist-btn">
+                    <i class="fa-solid fa-heart fa-lg wishlist-icon"></i>
+                  </button>
+                </div>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+
+          <main class="vertical-cardbody card-shadow">
+            <section class="image-container">
+              <img
+                class="cover-image"
+                loading="lazy"
+                src="/Assests/Images/Air-Jordan-1.webp"
+                alt="Air-Jordan-1"
+              />
+            </section>
+            <section class="information-container">
+              <div class="card-text-container">
+                <h5 class="card-title">Air Jordan 1 Mid SE</h5>
+                <p class="card-category">Men's Shoes</p>
+                <p class="price-container"></p>
+                <h6 class="price">Rs 10298</h6>
+                <p>(Inclusive of all tax)</p>
+              </div>
+              <button class="btn-card btn-cart">Add to Cart</button>
+            </section>
+          </main>
+        </div>
+      </main>
+
+      <footer class="footer footer-container"></footer>
     </div>
-</body>
-
+  </body>
 </html>
