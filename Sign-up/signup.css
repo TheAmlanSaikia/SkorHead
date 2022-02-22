@@ -5,6 +5,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: clip;
+  overflow-y: clip;
 }
 
 hr {
@@ -44,12 +45,8 @@ hr {
   padding-right: var(--value-2);
 }
 
-.header-container{
-    grid-area: header;
-}
 
 .main-container{
-    grid-area: main;
     width: 100vw;
 }
 
